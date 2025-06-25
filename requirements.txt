@@ -1,6 +1,6 @@
 langgraph
 langchain
-langchain-openai
+langchain-groq
 langchain-mcp-adapters
 mcp
 python-dotenv
