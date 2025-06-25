@@ -1,4 +1,4 @@
-# Langgraph Summarizer Agent
+# LangGraph Summarizer Agent
 
 This project uses **LangGraph**, **LangChain**, and **FastMCP** to build a multi-agent AI system that retrieves real-time information from the web and summarizes it based on user queries — for example:  
 > "Summarize what happened in the latest F1 Grand Prix."
