@@ -33,7 +33,7 @@ def retrieve_information(query: str) -> str:
     """
     try:
         load_dotenv()
-        client = TavilyClient(api_key=os.getenv("Tavily_API_KEY"))
+        client = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
         search = client.search(query, max_results=3, search_depth="advanced")
 
         content = [
