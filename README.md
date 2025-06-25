@@ -49,7 +49,13 @@ GROQ_API_KEY=your_groq_api_key_here
 TAVILY_API_KEY=your_tavily_api_key_here
 ```
 
-### 4. Run the app
+### 4. Run the server
+
+```bash
+python retriever_server.py
+```
+
+### 5. Run the app
 
 ```bash
 python client.py

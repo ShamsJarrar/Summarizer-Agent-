@@ -73,9 +73,8 @@ async def main():
     client = MultiServerMCPClient(
         {
             "retrieve": {
-                "command":"python",
-                "args":["retrieve_server.py"],
-                "transport":"stdio"
+                "url": "http://localhost:8000/mcp",
+                "transport":"streamable_http"
             }
         }
     )

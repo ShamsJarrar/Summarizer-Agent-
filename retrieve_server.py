@@ -4,8 +4,7 @@ from dotenv import load_dotenv
 import os
 import json
 
-
-mcp = FastMCP("retrieve")
+mcp = FastMCP("retrieve", host="0.0.0.0", port=8000)
 
 def save_to_file(content):
     FILE_NAME = 'retrieved_result.json'
@@ -49,5 +48,6 @@ def retrieve_information(query: str) -> str:
     except Exception as e:
         return f"[ERROR] Tool failed during execution: {e}"
 
+
 if __name__ == "__main__":
-    mcp.run(transport='stdio')
+    mcp.run(transport='streamable-http')
